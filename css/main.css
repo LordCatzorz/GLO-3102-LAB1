@@ -1,8 +1,12 @@
 article {
+    margin: 0.5em;
     margin-left: auto;
     margin-right: auto;
     background-color: lightgrey;
     max-width: 500px;
+    min-width: 300px;
+    width: 90%;
+    padding: 0.5em;
 }
 
 article .main_image {
@@ -12,4 +16,142 @@ article .main_image {
     min-width: 85%;
     max-width: 500px;
     max-height: 500px;
+    width: 90%
+}
+
+article h2 {
+    text-align: center;
+}
+
+article header {
+
+}
+
+article {
+    font-family: "Courier New";
+}
+
+article footer {
+    font-size: 2em;
+}
+
+article footer ul {
+    font-size: 2em;
+}
+
+article footer li {
+    display: inline-block;
+    width: 30%;
+    background-color: gainsboro;
+    text-align: center;
+    color: white;
+}
+
+article footer li:first-child {
+    background-color: darkgreen;
+}
+
+article footer li:last-child {
+    background-color: darkred;
+}
+
+article footer ul {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+article footer div {
+    text-align: center;
+}
+
+.connexion-menu {
+    position: relative;
+    text-align: right;
+}
+
+.navigation-menu {
+    position: relative;
+}
+
+.connexion-menu > li {
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navigation-menu > li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+nav {
+    display: block;
+}
+
+.main-nav {
+    position: relative;
+    background-color: lawngreen;
+}
+
+#main-header {
+    position: relative;
+    display: block;
+    background-color: black;
+    color: lightgrey;
+    min-height: 2em;
+}
+
+body {
+    background-color: #505050;
+}
+
+ul {
+    margin: 0;
+}
+
+#main-header * {
+    height: 100%;
+}
+
+#main-header > * {
+    width: 33%;
+    display: inline-block;
+}
+
+#connexion-nav {
+    background-color: yellow;
+
+}
+
+#main-header h1 {
+    padding: 5%;
+}
+
+@media (min-width: 600px) {
+    #main-header > * {
+        width: 30%;
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 600px) {
+    #main-header > nav {
+        width: 60%;
+    }
+
+    #main-header > div {
+        width: 10%;
+    }
+
+    .connexion-menu li {
+        margin: 0;
+    }
+
+    #main-header .logo {
+        display: none;
+    }
+
 }
