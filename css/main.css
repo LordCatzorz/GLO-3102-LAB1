@@ -67,15 +67,18 @@ article footer div {
 
 .connexion-menu {
     position: relative;
-    text-align: right;
+    width: 100px;
+    padding: 0;
 }
 
 .navigation-menu {
-    position: relative;
+    position: absolute;
+    right: 0;
 }
 
 .connexion-menu > li {
     display: block;
+    width: 100%;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -88,11 +91,6 @@ article footer div {
 
 nav {
     display: block;
-}
-
-.main-nav {
-    position: relative;
-    background-color: lawngreen;
 }
 
 #main-header {
@@ -116,13 +114,15 @@ ul {
 }
 
 #main-header > * {
-    width: 33%;
     display: inline-block;
 }
 
-#connexion-nav {
-    background-color: yellow;
+#main-header .logo {
+    width: 200px;
+}
 
+#main-header #connexion-nav {
+    width: 200px;
 }
 
 #main-header h1 {
@@ -130,28 +130,35 @@ ul {
 }
 
 @media (min-width: 600px) {
-    #main-header > * {
-        width: 30%;
-        margin: 0;
+    #hamburger-header {
+        display: none;
     }
 
 }
 
 @media (max-width: 600px) {
-    #main-header > nav {
-        width: 60%;
-    }
-
-    #main-header > div {
-        width: 10%;
-    }
-
-    .connexion-menu li {
-        margin: 0;
-    }
-
-    #main-header .logo {
+    #main-header {
         display: none;
     }
 
+    #hamburger-header {
+        background-color: black;
+    }
+
+    .hamburger-button > div {
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        display: block;
+        margin: 6px;
+    }
+
+    .hamburger-button {
+        background-color: silver;
+        width: 50px;
+        padding: 6px;
+        text-align: center;
+    }
+
 }
+
